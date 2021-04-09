@@ -1,6 +1,6 @@
 # React GPU JS
 
-Sample React application to demonstrate [GPU.js](https://github.com/gpujs/gpu.js) usage in React.
+Sample React application to demonstrate [GPU.js](https://github.com/gpujs/gpu.js) & [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) in React.
 
 ## Motivation
 
