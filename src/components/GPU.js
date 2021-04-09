@@ -14,7 +14,7 @@ function GPUOnly() {
   return (
     <div className='App'>
       GPU in separated Component
-      <div>{gpu && gpu}</div>
+      <div>GPU TIME:{gpu && gpu}</div>
       <hr />
     </div>
   )

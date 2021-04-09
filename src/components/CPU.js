@@ -14,7 +14,7 @@ function CPUOnly() {
   return (
     <div className='App'>
       CPU in separated Component
-      <div>{cpu && cpu}</div>
+      <div>CPU TIME:{cpu && cpu}</div>
       <hr />
     </div>
   )

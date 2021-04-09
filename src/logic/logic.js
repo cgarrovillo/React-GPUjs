@@ -34,7 +34,8 @@ export function gpuMultiplyMatrix(matrices, matrixSize) {
     .setOutput([matrixSize, matrixSize])
 
   const startTime = performance.now()
-  const resultMatrix = multiplyMatrix(matrices[0], matrices[1], matrixSize)
+
+  multiplyMatrix(matrices[0], matrices[1], matrixSize)
 
   const endTime = performance.now()
   const gpuTime = endTime - startTime + ' ms'
@@ -65,7 +66,7 @@ export function cpuMultiplyMatrix(matrices, matrixSize) {
   const endTime = performance.now()
   const cpuTime = endTime - startTime + 'ms'
   console.log('CPU TIME : ' + cpuTime)
-  const cpuProduct = product
+  // const cpuProduct = product
   return cpuTime
 }
 
@@ -90,7 +91,8 @@ export async function gpuMultiplyMatrixAsync(matrices, matrixSize) {
     .setOutput([matrixSize, matrixSize])
 
   const startTime = performance.now()
-  const resultMatrix = multiplyMatrix(matrices[0], matrices[1], matrixSize)
+
+  multiplyMatrix(matrices[0], matrices[1], matrixSize)
 
   const endTime = performance.now()
   const gpuTime = endTime - startTime + ' ms'
@@ -121,6 +123,6 @@ export async function cpuMultiplyMatrixAsync(matrices, matrixSize) {
   const endTime = performance.now()
   const cpuTime = endTime - startTime + 'ms'
   console.log('CPU TIME : ' + cpuTime)
-  const cpuProduct = product
+  // const cpuProduct = product
   return cpuTime
 }

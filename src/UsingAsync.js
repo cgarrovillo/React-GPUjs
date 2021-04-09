@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import './App.css'
 
 import { generateMatrices, gpuMultiplyMatrixAsync, cpuMultiplyMatrixAsync } from './logic/logic'
 
@@ -15,10 +14,10 @@ function Async() {
   }, [])
 
   return (
-    <div className='App'>
+    <div>
       Asynchronous Calls
-      <div>{gpu && gpu}</div>
-      <div>{cpu && cpu}</div>
+      <div>GPU TIME:{gpu && gpu}</div>
+      <div>CPU TIME:{cpu && cpu}</div>
       The same thing as the Synchronous call happens; <br />
       React still waits for the CPU calc to finish
       <hr />
